@@ -10,7 +10,7 @@
    Optionally, you may also merge:
    * https://github.com/instaloader/instaloader/pull/2579
 3. [browser-cookie3](https://github.com/borisbabic/browser_cookie3) module
-    Optionally, you may merge:
+   Optionally, you may merge:
    * https://github.com/borisbabic/browser_cookie3/pull/225
    * https://github.com/borisbabic/browser_cookie3/pull/226
 
