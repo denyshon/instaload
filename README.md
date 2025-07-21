@@ -1,7 +1,7 @@
 **intaload** is a module for downloading sets of Instagram profiles with [**instaloader**](https://github.com/instaloader/instaloader). The code is provided for informational purposes only; any usage or modification is prohibited without the copyright holder's written permission.
 
 
-# Required components
+## Required components
 1. Python (version 3.13 recommended)
 2. [instaloader](https://github.com/instaloader/instaloader) module with the following PRs merged:
    * https://github.com/instaloader/instaloader/pull/2577
@@ -15,7 +15,7 @@
    * https://github.com/borisbabic/browser_cookie3/pull/226
 
 
-# Recommended installation
+## Recommended installation
 1. Install the latest version of Python from the [official website](https://www.python.org/downloads/) with PIP included.
 2. In the system command prompt, run the following as an administrator:
    `pip install git+https://github.com/denyshon/instaloader`
