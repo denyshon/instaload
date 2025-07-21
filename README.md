@@ -6,13 +6,11 @@
 - [instaloader](https://github.com/instaloader/instaloader) module with the following PRs merged:
    * https://github.com/instaloader/instaloader/pull/2577
    * https://github.com/instaloader/instaloader/pull/2578
-   * https://github.com/instaloader/instaloader/pull/2581<br/>
-Optionally, you may also merge:
-   * https://github.com/instaloader/instaloader/pull/2579
-- [browser-cookie3](https://github.com/borisbabic/browser_cookie3) module<br/>
-Optionally, you may merge:
-   * https://github.com/borisbabic/browser_cookie3/pull/225
-   * https://github.com/borisbabic/browser_cookie3/pull/226
+   * https://github.com/instaloader/instaloader/pull/2581
+   * (optional) https://github.com/instaloader/instaloader/pull/2579
+- [browser-cookie3](https://github.com/borisbabic/browser_cookie3) module with the following PRs merged:
+   * (optional) https://github.com/borisbabic/browser_cookie3/pull/225
+   * (optional) https://github.com/borisbabic/browser_cookie3/pull/226
 
 
 ## Recommended installation
