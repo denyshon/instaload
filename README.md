@@ -2,14 +2,14 @@
 
 
 ## Required components
-1. Python (version 3.13 recommended)
-2. [instaloader](https://github.com/instaloader/instaloader) module with the following PRs merged:
+- Python (version 3.13 recommended)
+- [instaloader](https://github.com/instaloader/instaloader) module with the following PRs merged:
    * https://github.com/instaloader/instaloader/pull/2577
    * https://github.com/instaloader/instaloader/pull/2578
-   * https://github.com/instaloader/instaloader/pull/2581
+   * https://github.com/instaloader/instaloader/pull/2581<br/>
 Optionally, you may also merge:
    * https://github.com/instaloader/instaloader/pull/2579
-3. [browser-cookie3](https://github.com/borisbabic/browser_cookie3) module
+- [browser-cookie3](https://github.com/borisbabic/browser_cookie3) module<br/>
 Optionally, you may merge:
    * https://github.com/borisbabic/browser_cookie3/pull/225
    * https://github.com/borisbabic/browser_cookie3/pull/226
