@@ -15,8 +15,5 @@
 
 ## Recommended installation
 1. Install the latest version of Python from the [official website](https://www.python.org/downloads/) with PIP included.
-2. In the system command prompt, run the following as an administrator (to install instaloader with all the mentioned PRs merged):<br/>
-   `pip install git+https://github.com/denyshon/instaloader`<br/>
-3. In the system command prompt, run the following as an administrator (to install browser-cookie3 without the mentioned PRs merged):<br/>
-   `pip install browser-cookie3`<br/>
-4. Download the source code file (instaload.py) into the working directory.
+2. In the system command prompt (in your desired directory), run the following as an administrator (instaloader will be installed with all the mentioned PRs merged, and browser-cookie3 will be installed without the mentioned PRs merged):<br/>
+   `pip install git+https://github.com/denyshon/instaload`
