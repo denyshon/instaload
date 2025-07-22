@@ -1,2 +1,2 @@
 instaloader @ https://github.com/denyshon/instaloader
-browser-cookie3
+browser-cookie3 >= 0.19.1
