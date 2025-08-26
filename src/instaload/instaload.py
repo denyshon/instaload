@@ -2,7 +2,7 @@ import instaloader
 from instaloader.__main__ import import_session
 
 
-if __name__ == "__main__":
+def main():
     L = instaloader.Instaloader(
         save_metadata = False,
         #Merge https://github.com/instaloader/instaloader/pull/2578
@@ -92,3 +92,6 @@ if __name__ == "__main__":
 
     input("Downloading has been completed! Press Enter to close this window: ")
 
+
+if __name__ == "__main__":
+    main()
