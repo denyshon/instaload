@@ -17,6 +17,9 @@ dependencies = [
 ]
 requires-python = ">=3.9"
 
+[project.scripts]
+instaload = "instaload.instaload:main"
+
 [tool.hatch.build.targets.wheel]
 packages = ["src/instaload"]
 
