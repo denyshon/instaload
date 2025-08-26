@@ -19,4 +19,6 @@ requires-python = ">=3.9"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/instaload"]
+
+[tool.hatch.metadata]
 allow-direct-references = true
