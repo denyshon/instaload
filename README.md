@@ -18,3 +18,8 @@
 2. [Install Git](https://github.com/git-guides/install-git).
 3. In the system command prompt (in your desired directory), run the following as an administrator (instaloader will be installed with all the mentioned PRs merged, and browser-cookie3 will be installed without the mentioned PRs merged):<br/>
    `pip install git+https://github.com/denyshon/instaload`
+
+
+## Usage
+Run `instaload/src/instaload/instaload.py`.
+* If you installed the module using a package manager, you can also use the `instaloader` command.
