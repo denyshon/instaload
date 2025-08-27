@@ -24,4 +24,7 @@
 
 ## Usage
 Run `instaload/src/instaload/instaload.py`.
-* If you installed the module using a package manager, you can also use the `instaloader` command.
+* If you installed the module using a package manager, you can also execute
+  ```
+  instaloader
+  ```
