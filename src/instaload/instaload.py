@@ -5,27 +5,27 @@ from instaloader.__main__ import import_session
 def main():
     L = instaloader.Instaloader(
         save_metadata = False,
-        #Merge https://github.com/instaloader/instaloader/pull/2578
+        # Merge https://github.com/instaloader/instaloader/pull/2578
         download_captions = False
     )
 
-    #L.login("username", "password") does not work since login POST request does not receive sessionid
-    #A workaround for missing sessionid (see https://github.com/instaloader/instaloader/issues/2487):
+    # L.login("username", "password") does not work since login POST request does not receive sessionid
+    # A workaround for missing sessionid (see https://github.com/instaloader/instaloader/issues/2487):
     imported = False
     cont = True
     while not imported and cont:
         try:
-            #A browser to import session from ("firefox" | "librewolf" | "safari")
+            # A browser to import session from ("firefox" | "librewolf" | "safari")
             BROWSER = input("Which browser do you want to import cookies from? ").lower()
-            #Merge https://github.com/instaloader/instaloader/pull/2577 (session import fixes)
-            #Optionally, merge https://github.com/borisbabic/browser_cookie3/pull/226 (Firefox MSiX support)
-            #Optionally, merge https://github.com/borisbabic/browser_cookie3/pull/225 (Firefox via Flatpak support)
+            # Merge https://github.com/instaloader/instaloader/pull/2577 (session import fixes)
+            # Optionally, merge https://github.com/borisbabic/browser_cookie3/pull/226 (Firefox MSiX support)
+            # Optionally, merge https://github.com/borisbabic/browser_cookie3/pull/225 (Firefox via Flatpak support)
             import_session(BROWSER, L)
             imported = True
         except Exception as e:
             print (e)
             cont = input("Do you want to try again? (y/n) ") == "y"
-    #If import_session does not work:
+    # If import_session does not work:
     if not imported:
         print("You need to import your session manually then. In your browser, please sign in and provide the following values from Instagram cookies:")
         cont = True
@@ -57,7 +57,7 @@ def main():
         stamps = instaloader.LatestStamps(LATEST_STAMPS_FILEPATH)
         
         for line in input_file:
-            #Remove leading and trailing " " and "\n" from line:
+            # Remove leading and trailing " " and "\n" from line:
             line = line.strip(" \n")
             if line:
                 if "instagram.com/" not in line:
@@ -73,20 +73,20 @@ def main():
                     try:
                         profile = instaloader.Profile.from_username(L.context, username)
 
-                        #Merge https://github.com/instaloader/instaloader/pull/2581 (SYSTEMEXITs in case of substantial Instagram requirements)
-                        #Optionally, merge https://github.com/instaloader/instaloader/pull/2579 (logging format improvement)
+                        # Merge https://github.com/instaloader/instaloader/pull/2581 (SYSTEMEXITs in case of substantial Instagram requirements)
+                        # Optionally, merge https://github.com/instaloader/instaloader/pull/2579 (logging format improvement)
                         L.download_profiles(
                             [profile],
                             profile_pic = False,
-                            #posts = True, (default)
+                            # posts = True, (default)
                             latest_stamps = stamps,
                             reels = True
                         )
                     except Exception as e:
-                        #Treat exceptions as related to the current profile only, and therefore non-critical
+                        # Treat exceptions as related to the current profile only, and therefore non-critical
                         print(e)
 
-                    #Check if the account is still accessible:
+                    # Check if the account is still accessible:
                     L.test_login()
 
 
