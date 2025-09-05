@@ -7,6 +7,7 @@
    * [#2577](https://github.com/instaloader/instaloader/pull/2577)
    * [#2578](https://github.com/instaloader/instaloader/pull/2578)
    * [#2581](https://github.com/instaloader/instaloader/pull/2581)
+   * (optionally, recommended) [#2600](https://github.com/instaloader/instaloader/pull/2600)
    * (optionally) [#2579](https://github.com/instaloader/instaloader/pull/2579)
 - [browser-cookie3](https://github.com/borisbabic/browser_cookie3) module with the following PRs merged:
    * (optionally) [#225](https://github.com/borisbabic/browser_cookie3/pull/225)
