@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "instaload"
-version = "1.0.0"
+version = "1.0.1"
 description = "A module for downloading sets of Instagram profiles with instaloader"
 readme = "README.md"
 license = { text = "The code is provided for informational purposes only; any usage or modification is prohibited without the copyright holder's written permission." }

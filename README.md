@@ -5,7 +5,6 @@
 - Python (version 3.13 recommended)
 - [instaloader](https://github.com/instaloader/instaloader) module with the following PRs merged:
    * [#2577](https://github.com/instaloader/instaloader/pull/2577)
-   * [#2578](https://github.com/instaloader/instaloader/pull/2578)
    * [#2581](https://github.com/instaloader/instaloader/pull/2581)
    * (optionally, recommended) [#2600](https://github.com/instaloader/instaloader/pull/2600)
    * (optionally) [#2579](https://github.com/instaloader/instaloader/pull/2579)

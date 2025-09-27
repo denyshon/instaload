@@ -5,8 +5,7 @@ from instaloader.__main__ import import_session
 def main():
     L = instaloader.Instaloader(
         save_metadata = False,
-        # Merge https://github.com/instaloader/instaloader/pull/2578
-        download_captions = False
+        post_metadata_txt_pattern = ''  # don't save captions
     )
 
     # L.login("username", "password") does not work since login POST request does not receive sessionid
