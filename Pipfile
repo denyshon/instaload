@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 requests = "*"
 flask = "*"
-instaloader = {git = "https://github.com/denyshon/instaloader.git", ref = "main"}
+instaloader = {git = "https://github.com/denyshon/instaloader.git", ref = "instaload"}
 browser-cookie3 = ">=0.20"
 
 [dev-packages]
