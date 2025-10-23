@@ -72,7 +72,8 @@ def main():
                     try:
                         profile = instaloader.Profile.from_username(L.context, username)
 
-                        # Merge https://github.com/instaloader/instaloader/pull/2581 (SYSTEMEXITs in case of substantial Instagram requirements)
+                        # Merge https://github.com/instaloader/instaloader/pull/2612 (substantional Instagram requirements handling)
+                        # Merge https://github.com/instaloader/instaloader/pull/2600 (save resume information on exception)
                         # Optionally, merge https://github.com/instaloader/instaloader/pull/2579 (logging format improvement)
                         L.download_profiles(
                             [profile],
@@ -81,6 +82,9 @@ def main():
                             latest_stamps = stamps,
                             reels = True
                         )
+                    except instaloader.AbortDownloadException as e:
+                        print(f"A critical error has interrupted your downloading process. Please resolve the corresponding issue before retrying:\n{e}")
+                        break
                     except Exception as e:
                         # Treat exceptions as related to the current profile only, and therefore non-critical
                         print(e)
