@@ -83,7 +83,13 @@ def main():
                             reels = True
                         )
                     except instaloader.AbortDownloadException as e:
-                        print(f"A critical error has interrupted your downloading process. Please resolve the corresponding issue before retrying:\n{e}")
+                        match str(e):
+                            case "feedback_required":
+                                print("The module execution stopped as Instagram’s anti-bot safety system has been set off. "
+                                      "Please try again in several (up to 24) hours.")
+                            case "checkpoint_required" | "challenge_required":
+                                print("The module execution stopped as your Instagram account is either suspended or disabled. "
+                                      "Please check your email for further steps (you may be required to go through a verification process).")
                         break
                     except Exception as e:
                         # Treat exceptions as related to the current profile only, and therefore non-critical
